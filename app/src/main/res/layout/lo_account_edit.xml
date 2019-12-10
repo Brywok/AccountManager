@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Account"
+        android:textSize="20dp"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_text_accountidEdit"
+            android:hint="Account"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edit_text_usernameEdit"
+            android:hint="Username"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edit_text_passwordEdit"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edit_text_siteEdit"
+            android:hint="Website"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <EditText
+            android:id="@+id/edit_text_notesEdit"
+            android:hint="Notes"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+</LinearLayout>

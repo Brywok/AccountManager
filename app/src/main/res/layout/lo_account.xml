@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/labelAccountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/txt_margin"
+        android:text="@string/accountLabel"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAccountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="@dimen/txt_margin"
+        android:text="@string/nothing"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@+id/labelAccountName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/txt_margin"
+        android:text="@string/usernameLabel"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelAccountName" />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="@dimen/txt_margin"
+        android:text="@string/nothing"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@+id/labelUsername"
+        app:layout_constraintTop_toBottomOf="@+id/txtAccountName" />
+
+
+
+    <TextView
+        android:id="@+id/labelPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/txt_margin"
+        android:textSize="@dimen/text_size"
+        android:text="@string/passwordLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelUsername" />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="@dimen/txt_margin"
+        android:text="@string/nothing"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@+id/labelPassword"
+        app:layout_constraintTop_toBottomOf="@id/txtUsername"/>
+
+    <TextView
+        android:id="@+id/labelSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/txt_margin"
+        android:textSize="@dimen/text_size"
+        android:text="@string/websiteLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelPassword" />
+
+    <TextView
+        android:id="@+id/txtSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="@dimen/txt_margin"
+        android:text="@string/nothing"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@+id/labelSite"
+        app:layout_constraintTop_toBottomOf="@id/txtPassword"/>
+
+    <TextView
+        android:id="@+id/labelNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/txt_margin"
+        android:textSize="@dimen/text_size"
+        android:text="@string/notesLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelSite"/>
+
+    <TextView
+        android:id="@+id/txtNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="@dimen/txt_margin"
+        android:text="@string/nothing"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@+id/labelNotes"
+        app:layout_constraintTop_toBottomOf="@id/txtSite" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/txtNotes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dotted_line" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnShow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtAccountName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtAccountName"
+        app:layout_constraintTop_toBottomOf="@+id/btnShow" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEdit" />
+</androidx.constraintlayout.widget.ConstraintLayout>
